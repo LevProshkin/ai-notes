@@ -37,7 +37,7 @@ export default function App() {
 
     try {
       // Робимо запит на наш бекенд
-      const response = await fetch('http://localhost:5000/api/enhance', {
+      const response = await fetch('https://ai-notes-api-akun.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
