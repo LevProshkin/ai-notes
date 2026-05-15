@@ -1,9 +1,9 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBCIxspmafBLI2NEhFk1vgp2ZV043L6-rs",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "ai-notes-lev.firebaseapp.com",
   projectId: "ai-notes-lev",
   storageBucket: "ai-notes-lev.firebasestorage.app",
